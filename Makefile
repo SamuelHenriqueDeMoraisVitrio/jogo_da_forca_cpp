@@ -1,15 +1,14 @@
 COMP = clang++
-OPC = -Wall -std=c++17
 NOME = EXE
-START = echo "" && echo "Compilação concluida. Iniciando..." && echo "" && echo "" && ./$(NOME)
+START = echo "" && echo "Compilação concluida. Iniciando..." && echo "" && echo "" && ./$(NOME) && echo ""
 
 
 main: clear
-	$(COMP) $(OPC) *.cpp -o $(NOME)
+	$(COMP) main.cpp -o $(NOME)
 	@$(START)
 
 compile: clear
-	$(COMP) $(OPC) -o $(NOME) *.cpp
+	$(COMP) -o $(NOME) main.cpp
 
 clear:
 	rm -rf $(NOME) .*.cpp.swp .*.h.swp .cache
