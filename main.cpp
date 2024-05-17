@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <array>
 #include <fstream>
 #include <iostream>
@@ -14,7 +13,7 @@ int main(int argc, char *argv[]) {
   std::cout << '\n' << '\n' << valor_IN << '\n';
   */
 
-  std::ifstream entryFILE("namesSecrets/names.txt");
+  std::ifstream entryFILE("forca/desenhos");
 
   if (!entryFILE) {
     std::cerr << "\n\tErro ao abrir banco de dados.\n\n";
